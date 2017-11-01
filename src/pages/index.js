@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
   return (
     <div>
       <g.H1 display={"inline-block"} borderBottom={"1px solid"}>
-        Amazing Pandas Eating Things
+        Welcome to my first markdown blog posts
       </g.H1>
       <h4>
         {data.allMarkdownRemark.totalCount} Posts
@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
               {node.excerpt}
             </p>
           </Link>
-        </div>    
+        </div>
       )}
     </div>
   )
