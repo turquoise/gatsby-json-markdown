@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link'
 
 const BeerPage = ({ data }) => {
   console.log('BeerPage ', data)
@@ -10,6 +11,7 @@ const BeerPage = ({ data }) => {
         <strong>{beer.BeerStyle_en}</strong>
       </p>
       <p>{beer.Description_en}</p>
+      <Link to="/beers/">Go back to Beers</Link>
     </div>
   );
 };

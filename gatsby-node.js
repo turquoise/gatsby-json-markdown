@@ -13,8 +13,8 @@ exports.onCreateNode = ({ node, _, getNode, boundActionCreators }) => {
     })
   }
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    console.log(createFilePath({ node, getNode, basePath: `pages` }))
+    const slug = createFilePath({ node, getNode, basePath: `posts` })
+    console.log(createFilePath({ node, getNode, basePath: `posts` }))
     createNodeField({
       node,
       name: `slug`,
@@ -68,7 +68,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           },
         })
       })
-      console.log(JSON.stringify(result, null, 4))
+      //console.log(JSON.stringify(result, null, 4))
       resolve()
     })
   })
