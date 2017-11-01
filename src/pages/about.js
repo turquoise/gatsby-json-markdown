@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 export default ({ data }) =>
   <div>
     <h1>About adding data in Gatsby - {data.site.siteMetadata.title}</h1>
+
     <p>
       JSON and Mardown in Gatsby.
     </p>
@@ -16,7 +17,7 @@ export default ({ data }) =>
       site {
         siteMetadata {
           title
-          category
+
         }
       }
     }

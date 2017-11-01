@@ -12,10 +12,10 @@ export default ({ data }) => {
             to={node.fields.slug}
             css={{ textDecoration: `none`, color: `inherit` }}
           >
-            <g.H3 marginBottom={rhythm(1 / 4)}>
+            <h3>
               {node.frontmatter.title}{" "}
-              <g.Span color="#BBB">— {node.frontmatter.date}</g.Span>
-            </g.H3>
+              <span color="#BBB">— {node.frontmatter.date}</span>
+            </h3>
 
           </Link>
         </div>
@@ -30,11 +30,16 @@ export default ({ data }) => {
       allMarkdownRemark(filter: {frontmatter: {category: {eq: "blue"}}}) {
         edges {
           node {
+            id
             frontmatter {
               title
               category
               date(formatString: "DD MMMM, YYYY")
             }
+            fields {
+              slug
+            }
+
           }
         }
       }

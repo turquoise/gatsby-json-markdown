@@ -4,6 +4,7 @@ import g from "glamorous"
 import { rhythm } from "../utils/typography"
 
 
+
 const IndexPage = ({ data }) => {
   console.log('data from IndexPage ', data)
   return (

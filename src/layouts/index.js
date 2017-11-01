@@ -10,8 +10,6 @@ const linkStyle = css({
   marginRight: 20
 })
 
-
-
 const TemplateWrapper = ({ children, data }) => (
   <g.Div>
     <g.Div
@@ -60,13 +58,9 @@ export const query = graphql `
     site {
       siteMetadata {
         title
-        
       }
     }
   }
 `
-
-
-
 
 export default TemplateWrapper
