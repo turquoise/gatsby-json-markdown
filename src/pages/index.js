@@ -13,10 +13,10 @@ const IndexPage = ({ data }) => {
       <h4>
         {data.allMarkdownRemark.totalCount} Posts
       </h4>
-      {data.allMarkdownRemark.edges.map(({ node }) =>
-        <div key={node.fields.id}>
+      {data.allMarkdownRemark.edges.map(({ node, index }) =>
           <Link
             to={node.fields.slug}
+            key={index}
             css={{ textDecoration: `none`, color: `inherit` }}
           >
 
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
               {node.excerpt}
             </p>
           </Link>
-        </div>
+
       )}
     </div>
   )
