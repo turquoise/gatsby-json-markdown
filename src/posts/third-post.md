@@ -1,12 +1,12 @@
 ---
-title: "My second blog post"
+title: "My third blog post"
 date: "2017-11-01"
 category: "blue"
 ---
 
-## Second Blog post
+## First Blog post
 
-This is my second blog post.
+This is my third blog post.
 
 from posts
 

@@ -14,7 +14,7 @@ exports.onCreateNode = ({ node, _, getNode, boundActionCreators }) => {
   }
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `posts` })
-    console.log(createFilePath({ node, getNode, basePath: `posts` }))
+    //console.log(createFilePath({ node, getNode, basePath: `posts` }))
     createNodeField({
       node,
       name: `slug`,

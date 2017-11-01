@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import g from "glamorous"
 import { rhythm } from "../utils/typography"
 
+
 const IndexPage = ({ data }) => {
   console.log('data from IndexPage ', data)
   return (
@@ -44,6 +45,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            category
             date(formatString: "DD MMMM, YYYY")
           }
           fields {

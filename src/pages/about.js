@@ -1,6 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 
+
 export default ({ data }) =>
   <div>
     <h1>About adding data in Gatsby - {data.site.siteMetadata.title}</h1>
@@ -15,6 +16,7 @@ export default ({ data }) =>
       site {
         siteMetadata {
           title
+          category
         }
       }
     }
